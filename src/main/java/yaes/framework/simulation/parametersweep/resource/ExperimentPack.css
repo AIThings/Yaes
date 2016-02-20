@@ -1,0 +1,122 @@
+body.toppanel {
+  background-color: #A0CFEC /* Light Sky Blue */   	   	
+}
+
+body { 
+  font-family: Verdana, sans-serif;
+  font-size: 11pt;
+  background-color: #FFFFFF; /* white */   
+  margin: 0;
+  border: 0;
+  padding: 0;
+  line-height: 90%;
+}
+    
+td {
+	vertical-align: top;
+}  
+  
+  
+pre {
+        background: white;
+}
+  
+A {
+  color: #0000A0; /* darkblue */
+  text-decoration: none;
+  border-width: thin;
+}
+
+H1 {
+  font-size: 12pt;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: #cccccc; 
+  color: #0000A0; /* darkblue */
+}
+
+H2 {
+  font-size: medium;
+  font-weight: bold;
+  /* background-color: #dddd00; */
+  color: #0000A0; /* darkblue */
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  line-height: 80%;
+}
+
+.h2CORESONANCE {
+  background-color: #000000;    
+  color: #ffffff;    
+/*  background-color: #ffffff; */    
+}
+
+
+.h2LABEL {
+  background-color: #ffffcc;	
+}
+
+.h2EXPECTATION {
+  background-color: #ccffcc;    
+}
+
+.h2OBSERVED_ACTION {
+  background-color: #ff66cc;    
+}
+
+.h2OBSERVED_ENTITY {
+  background-color: #66ff99;    
+}
+
+H3 {
+  font-weight: bold;
+  font-size: small;
+  font-style: italic;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  line-height: 80%;
+}
+
+
+div.focusitems {
+   	background-color: #FFFFFF;
+	margin: 10px; 
+}
+
+div.indented {
+    background-color: #FFFFFF;
+    margin-left: 10px; 
+}
+
+
+span.smalltype {
+	color: #FF0000;
+	font-size: x-small;	
+}
+
+span.linktype {
+    color: #0000FF;
+    font-size: x-small; 
+}
+
+
+span.memorystate {
+    color: #FF00FF;
+    font-size: x-small; 
+}
+
+span.attributes {
+    font-size: x-small; 
+}
+
+span.position {
+    font-weight: bold;
+    color: #FFFFFF;
+	background-color: #000000;
+}
+
+.tdgray {
+    background-color: #EEEEEE;
+}
