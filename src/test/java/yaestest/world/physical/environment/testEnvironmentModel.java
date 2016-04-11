@@ -9,7 +9,6 @@ import org.junit.Test;
 import yaes.ui.text.TextUi;
 import yaes.ui.visualization.Visualizer;
 import yaes.ui.visualization.painters.paintEnvironmentModel;
-import yaes.util.ClassResourceHelper;
 import yaes.world.physical.environment.EnvironmentModel;
 import yaes.world.physical.environment.LinearColorToValue;
 
