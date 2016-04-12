@@ -20,6 +20,7 @@ import javax.swing.JSplitPane;
 import javax.swing.UIManager;
 
 import yaes.ui.simulationcontrol.ISimulationControlPanel;
+import yaes.ui.text.TextUi;
 import yaes.ui.visualization.painters.IPainter;
 
 /**
@@ -315,7 +316,7 @@ public class Visualizer implements HierarchyListener, ISimulationControlPanel {
 	/**
 	 * Updates the visualizer
 	 */
-	public void update() {
+	synchronized public void update() {
 		if (visualCanvas != null) {
 			visualCanvas.update();
 		}
@@ -328,12 +329,13 @@ public class Visualizer implements HierarchyListener, ISimulationControlPanel {
 	 * Call this to update the inspector text, useful if it changes every
 	 * timestep.
 	 */
-	public void updateInspector() {
+	synchronized public void updateInspector() {
 		if (useInspector && updatedInspector) {
 			try {
 				inspector.updateLongText();
 			} catch (NullPointerException e) {
 				// Nothing selected
+				TextUi.println("NPE in updateInspector");
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 package yaestest.framework.simulation.statutil;
 
-import junit.framework.Assert;
-import junit.framework.TestCase;
+import org.junit.Test;
+import org.junit.Assert;
 
 /**
  * Testing the local implementation of Tally against the one from the ssj
@@ -10,11 +10,12 @@ import junit.framework.TestCase;
  * @author Lotzi Boloni
  * 
  */
-public class testTally extends TestCase {
+public class testTally  {
     /**
      * Tests whether the code in our tally implementation gives the same results
      * as the one in SSJ.
      */
+	@Test
     public void testCorrectness() {
         final yaes.framework.simulation.statutil.Tally mytally = new yaes.framework.simulation.statutil.Tally();
         final umontreal.iro.lecuyer.stat.Tally ssjtally = new umontreal.iro.lecuyer.stat.Tally();
@@ -54,6 +55,7 @@ public class testTally extends TestCase {
     /**
      * Tests the equal function in Tally
      */
+	@Test
     public void testEqual() {
         final yaes.framework.simulation.statutil.Tally mytally1 = new yaes.framework.simulation.statutil.Tally();
         final yaes.framework.simulation.statutil.Tally mytally2 = new yaes.framework.simulation.statutil.Tally();
